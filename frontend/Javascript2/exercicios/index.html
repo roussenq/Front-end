@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Semana 3</title>
+</head>
+
+<body>
+
+    <h1>Exercício 1</h1>
+    <label for="data">Insira sua data de nascimento: </label>
+    <input type="date" name="data" id="data">
+    <br><br>
+    <button id="btnCalc" onclick="calcIdade()">calcular idade</button>
+    <p id='idade' onchange=""></p>
+    <hr>
+
+    <h1>Exercício 2</h1>
+    <label for="n1">Valor 1: </label>
+    <input type="number" name="n1" id="n1">
+    <br>
+    <label for="n2">Valor 2: </label>
+    <input type="number" name="n2" id="n2">
+    <p></p>
+    <button type="button" onclick="calcSoma()" id="soma">+</button>
+    <button type="button" onclick="calcSub()" id="sub">-</button>
+    <button type="button" onclick="calcMulti()" id="mult">*</button>
+    <button type="button" onclick="calcDiv()" id="div">/</button>
+    <p></p>
+    <label for="resultado">Resultado</label>
+    <input type="text" readonly='true' name="resultado" id="resultado">
+    <hr>
+
+    <h1>Exercício 3</h1>
+    <label for="imPar">Digite um número: </label>
+    <input type="number" name="imPar" id="imPar">
+    <button onclick="parImpar()">Calcular</button>
+    <p id="resultado_imPar"></p>
+    <hr>
+
+    <h1>Exercício 4</h1>
+    <p id="time"></p>
+    <hr>
+
+    <h1>Exercício 5</h1>
+    <p id="time2"></p>
+    <hr>
+
+    <h1>Exercício 6</h1>
+    <p id="estacao"></p>
+    <p></p>
+    <img id='img-estacao' src="#" alt="estacao">
+    <hr>
+
+    <h1>Exercício 7</h1>
+    <select name="listaCompras" id="listaCompras"></select>
+    <p></p>
+    <form id="listaForm">
+        <label for="novoItem">Item à adicionar: </label>
+        <input type="text" name="novoItem" id="novoItem">
+        <button type="submit" onclick="addItem()" id="btnAdicionar">adicionar</button>
+    </form>
+    <hr>
+
+    <h1>Exercícios 8 e 9</h1>
+    <select name="listaCompras2" id="listaCompras2"></select>
+    <p></p>
+    <form id="listaForm2">
+        <label for="novoItem2">Item à adicionar: </label>
+        <input type="text2" name="novoItem2" id="novoItem2">
+        <button type="submit2" onclick="addItem2()" id="btnAdicionar2">adicionar</button>
+    </form>
+    <p>
+        <button id="saveLista" onclick="saveStorage()">Salvar Lista</button>
+        <button id="loadLista" onclick="loadStorage()">Carregar Lista</button>
+    </p>
+    <hr>
+
+    <h1>Exercício 10</h1>
+    <label for="inputValor">valor inicial</label>
+    <br>
+    <input type="number" name="inputValor" id="inputValor">
+    <br>
+    <label for="inputRaiz">raiz</label>
+    <br>
+    <input type="number" name="inputRaiz" id="inputRaiz">
+    <p>
+        <button id="calcPA">Calcular P.A.</button>
+        <button id="calcPG">Calcular P.G.</button>
+    </p>
+</body>
+
+</html>
